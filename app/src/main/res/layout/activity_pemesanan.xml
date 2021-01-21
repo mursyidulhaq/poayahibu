@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.pemesanan.PemesananActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Asal"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        />
+    <Spinner
+        android:id="@+id/spasal"
+        android:entries="@array/tujuan"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/border_gray"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tujuan"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        />
+    <Spinner
+        android:id="@+id/sptujuan"
+        android:background="@drawable/border_gray"
+        android:paddingLeft="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:entries="@array/asal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal keberangkatan"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/cvimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/cvimage"
+
+        />
+
+    <TextView
+    android:id="@+id/txttnggal"
+        android:background="@drawable/border_gray"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+    android:layout_marginBottom="10dp"
+    android:hint="tanggal"
+    android:layout_height="50dp">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jumlah tiket"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        />
+    <Spinner
+        android:id="@+id/spjumlahtket"
+        android:background="@drawable/border_gray"
+        android:layout_width="match_parent"
+        android:entries="@array/jumlahtiket"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btncaritiket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/bacground_blue"
+        android:text="Cari Tiket" />
+
+</LinearLayout>

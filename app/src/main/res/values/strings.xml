@@ -1,0 +1,45 @@
+<resources>
+
+
+    <string name="app_name">PoAyah</string>
+    <string-array name="tujuan">
+        <item>padang</item>
+        <item>payakumbuh</item>
+    </string-array>
+
+    <string-array name="asal">
+        <item>padang</item>
+        <item>payakumbuh</item>
+    </string-array>
+    <string-array name="jeniskelamin">
+        <item>laki laki</item>
+        <item>perempuan</item>
+    </string-array>
+    <string-array name="jumlahtiket">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="asalbackhend">
+        <item>padang</item>
+        <item>payakumbuh</item>
+        <item>bukittinggi</item>
+        <item>agam</item>
+        <item>padang</item>
+        <item>padang panjang </item>
+        <item>padang pariaman</item>
+        <item>pariaman</item>
+        <item>solok</item>
+        <item>tanah datar </item>
+        <item>sawah lunto</item>
+        <item>sijunjung</item>
+        <item>solok selatan</item>
+        <item>darmasraya</item>
+        <item>pesisir selatan</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

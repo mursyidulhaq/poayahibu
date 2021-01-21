@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".view.pemesanan.IsiDataPemesananActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtdatabayar"
+            android:text="Data pemesanan"
+            android:layout_marginStart="130dp"
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/border_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pemesanananda"
+            android:text="Pesanan anda"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtasal3"
+            android:hint="asal"
+            android:layout_below="@+id/pemesanananda"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtstrip3"
+            android:text="-"
+            android:layout_below="@+id/pemesanananda"
+            android:layout_toRightOf="@+id/txtasal3" />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txttujuan3"
+        android:hint="tujuan"
+        android:layout_below="@+id/pemesanananda"
+        android:layout_toRightOf="@+id/txtstrip3" />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtgaring3"
+        android:hint="/"
+        android:layout_below="@+id/pemesanananda"
+        android:layout_toRightOf="@+id/txttujuan3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txttanggal3"
+            android:hint="tanggal keberangkatan"
+            android:layout_below="@+id/pemesanananda"
+            android:layout_toRightOf="@+id/txtgaring3" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Data pemesanan" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/feb"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/etisinama"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittext"
+            android:inputType="none" />
+        <Button
+            android:id="@+id/bayar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bacground_blue"
+            android:text="bayar"
+
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

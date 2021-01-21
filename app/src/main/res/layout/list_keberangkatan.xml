@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/btndlelete"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/border_gray"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtasaltulisan"
+            android:layout_width="197dp"
+            android:layout_marginTop="10dp"
+            android:text="Asal"
+            android:paddingLeft="14dp"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/txtasal"
+            android:layout_below="@+id/txtasaltulisan"
+            android:layout_width="197dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/border_gray"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:hint="asal" />
+
+        <TextView
+            android:id="@+id/txbrangkattulisan"
+            android:layout_width="197dp"
+            android:layout_marginTop="10dp"
+            android:text="Berangkat"
+            android:layout_toRightOf="@+id/txtasaltulisan"
+            android:paddingLeft="25dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtjamkeberangkatan"
+            android:layout_width="197dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/txbrangkattulisan"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/border_gray"
+            android:layout_height="30dp"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@+id/txtasal"
+            android:hint="jam keberangkatan" />
+
+        <TextView
+            android:id="@+id/txtsampaitulisan"
+            android:layout_width="197dp"
+            android:text="Sampai"
+            android:layout_toRightOf="@+id/txttujuantulisan"
+            android:paddingLeft="25dp"
+            android:layout_below="@+id/txtjamkeberangkatan"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtjamksampai"
+            android:layout_width="197dp"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/border_gray"
+            android:layout_height="30dp"
+            android:layout_marginLeft="11dp"
+            android:layout_below="@+id/txtsampaitulisan"
+            android:layout_toRightOf="@+id/txtasal"
+            android:hint="jam sampai" />
+
+        <TextView
+            android:id="@+id/txttujuantulisan"
+            android:layout_width="197dp"
+            android:text="Tujuan"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txtasal"
+            android:paddingLeft="14dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/txttujuan"
+            android:layout_width="197dp"
+
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/border_gray"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:hint="tujuan"
+            android:layout_below="@+id/txttujuantulisan"
+            />
+
+        <TextView
+            android:id="@+id/txtsamapitulisan"
+            android:layout_width="197dp"
+            android:text="po asal"
+            android:layout_toRightOf="@+id/txtpotujuantulisan"
+            android:paddingLeft="25dp"
+            android:layout_below="@+id/txtjamksampai"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtpoasal"
+            android:layout_width="197dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/txtsamapitulisan"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/txttujuan"
+            android:background="@drawable/border_gray"
+            android:hint="po asal"
+            android:paddingLeft="10dp" />
+        <TextView
+            android:id="@+id/txtpoasaltulisan"
+            android:layout_width="197dp"
+            android:text="Harga"
+            android:layout_toRightOf="@+id/txtpotujuantulisan"
+            android:paddingLeft="25dp"
+            android:layout_below="@+id/txtpoasal"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtharga"
+            android:layout_width="197dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border_gray"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="11dp"
+            android:layout_below="@+id/txtpoasaltulisan"
+            android:layout_toRightOf="@+id/txttujuan"
+            android:hint="harga" />
+
+        <TextView
+            android:id="@+id/txtpotujuantulisan"
+            android:layout_width="197dp"
+            android:text="Po tujuan"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txttujuan"
+            android:paddingLeft="14dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/txtpotujuan"
+            android:paddingLeft="10dp"
+            android:layout_width="197dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/border_gray"
+            android:layout_height="30dp"
+            android:hint="po tujuan"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/txtpotujuantulisan"
+            />
+        <ImageView
+            android:id="@+id/btndelete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="80dp"
+           android:src="@drawable/ic_delete"
+            android:layout_below="@+id/txtpotujuan"
+            />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

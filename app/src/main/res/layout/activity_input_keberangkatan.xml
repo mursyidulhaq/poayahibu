@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".view.keberangkatan.InputKeberangkatanActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Asal"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/etasal"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:hint="asal"
+        android:padding="5dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tujuan"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/ettujuan"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:hint="tujuan"
+        android:padding="5dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="jam berangkat"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/etberangkat"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:hint="Jam berangkat"
+        android:padding="5dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jam sampai"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/etsampai"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:hint="jam sampai"
+        android:padding="5dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Po asal"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etpoasal"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:hint="poasal"
+        android:padding="5dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Po tujuan"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etpotujuan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/edittext"
+        android:hint="potujuan"
+        android:padding="5dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harga"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etharga"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:hint="harga"
+        android:padding="5dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnsimpankeberangkatan"
+            android:background="@drawable/button"
+            android:textColor="#fff"
+            android:text="Simpan"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnbatalkeberangkatan"
+            android:layout_marginEnd="5dp"
+            android:text="Batal"
+            android:textColor="#fff"
+            android:background="@drawable/button2"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+</LinearLayout>

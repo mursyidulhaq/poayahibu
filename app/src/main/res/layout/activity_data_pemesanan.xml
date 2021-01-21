@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.pemesanan.DataPemesananActivity">
+    <TextView
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Isi Data Pemesanan"
+        />
+
+    <EditText
+       android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:hint="nama pemesan"
+    android:paddingLeft="10dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/edittext"
+    android:id="@+id/etnama"
+    />
+    <Spinner
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="jenis kelamin"
+        android:paddingLeft="10dp"
+        android:entries="@array/jeniskelamin"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/etjk"
+        />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edittext"
+        android:hint="nohp"
+        android:inputType="phone"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="email"
+        android:paddingLeft="10dp"
+        android:inputType="textWebEmailAddress"
+        android:background="@drawable/edittext"
+        android:id="@+id/etnohp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnsimpan"
+            android:background="@drawable/button"
+            android:textColor="#fff"
+            android:text="Simpan"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnbatal"
+            android:text="Batal"
+            android:textColor="#fff"
+            android:background="@drawable/button2"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+</LinearLayout>

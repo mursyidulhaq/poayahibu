@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".view.pemesanan.DetailPemesananActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_gray"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        >
+
+        <TextView
+            android:id="@+id/txtasal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="asal"
+            android:paddingLeft="10dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtstrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/txtasal"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/txttujuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/txtstrip"
+            android:hint="tujuan" />
+        <TextView
+            android:id="@+id/txttanggal_keberangkatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/txtasal"
+            android:hint="tanggal keberangkatan" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txttitik"
+            android:layout_toRightOf="@+id/txttanggal_keberangkatan"
+            android:layout_below="@+id/txttujuan"
+            android:text="."
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtjumlahkursi"
+            android:layout_toRightOf="@+id/txttitik"
+            android:layout_below="@+id/txttujuan"
+            android:textSize="20dp"
+            android:hint="jumlah kursi"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txttanggal_keberangkatan"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/txtfasilitas"
+            android:text="Fasilitas"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/bagasi"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/txtfasilitas"
+            android:id="@+id/imbagasi"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtfasilitas"
+            android:layout_toRightOf="@+id/imbagasi"
+            android:textSize="20dp"
+            android:id="@+id/txtbagasi"
+            android:text="Bagasi"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ace"
+            android:layout_below="@+id/txtfasilitas"
+            android:layout_toRightOf="@id/txtbagasi"
+            android:id="@+id/imac"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtfasilitas"
+            android:layout_toRightOf="@+id/imac"
+            android:textSize="20dp"
+            android:id="@+id/txtac"
+            android:hint="ac"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_gray"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jadwalperjalanan"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:text="Jadwal Perjalanan"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtdjamberangkat"
+            android:textSize="20dp"
+            android:hint="jam berangkat"
+            android:layout_below="@+id/jadwalperjalanan"
+            android:layout_marginLeft="70dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtdjamsampai"
+            android:textSize="20dp"
+            android:hint="jam berangkat"
+            android:layout_below="@+id/txtdjamberangkat"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="70dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtpoasal"
+            android:textSize="10dp"
+            android:hint="poasal"
+            android:layout_below="@+id/txtdjamberangkat"
+            android:layout_toRightOf="@id/txtdjamberangkat"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtpotujuan"
+            android:hint="potujuan"
+            android:textSize="10dp"
+            android:layout_below="@+id/txtpoasal"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/txtdjamberangkat"
+
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_gray"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtruteperjalanan"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:text="Rute Perjalanan"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtasal2"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/txtruteperjalanan"
+            android:hint="asal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtstrip2"
+            android:layout_below="@+id/txtruteperjalanan"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:hint="-"
+            android:layout_toRightOf="@+id/txtasal2"
+            />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txttujuan2"
+            android:textSize="20dp"
+        android:layout_below="@+id/txtruteperjalanan"
+        android:hint="tujuan"
+        android:layout_toRightOf="@+id/txtstrip2"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txttotaltext"
+            android:textSize="20dp"
+            android:layout_below="@+id/txtasal2"
+            android:hint="Total"
+            android:paddingLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txttotal"
+            android:textSize="20dp"
+            android:layout_below="@+id/txttujuan2"
+            android:hint="Total"
+            android:layout_toRightOf="@+id/txtstrip2"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnpesanbus"
+            android:textSize="17dp"
+            android:padding="10dp"
+            android:text="Pesan Bus"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bacground_blue"
+            android:layout_below="@+id/txtruteperjalanan"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
